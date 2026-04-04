@@ -1,0 +1,113 @@
+:root {
+  --gray-dark: #2c3e50;
+  --gray-medium: #7f8c8d;
+  --gray-light: #ecf0f1;
+  --gold: #d4af37;
+  --gold-dark: #b7950b;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+              url('../../assets/Kras.jpg') center/cover no-repeat;
+  height: 100vh;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 1rem;
+  color: var(--gold);
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  margin-bottom: 2rem;
+}
+
+.hero-button {
+  background-color: var(--gold);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: var(--gold-dark);
+}
+
+.hero-subtitle-container {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.hero-features {
+  text-align: left;
+  margin: 1rem auto;
+  padding: 0;
+  list-style-type: none;
+  max-width: 600px;
+}
+
+.hero-features li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.hero-features li:before {
+  content: '•';
+  color: var(--gold);
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -0.3rem;
+}
+
+.feature-icon {
+  color: var(--gold);
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .hero-features {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  .hero-features li {
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  .hero-features li:before {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}

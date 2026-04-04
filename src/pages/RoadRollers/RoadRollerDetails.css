@@ -1,0 +1,353 @@
+:root {
+  --gray-dark: #2c3e50;
+  --gray-medium: #7f8c8d;
+  --gray-light: #f8f9fa;
+  --gold: #d4af37;
+  --gold-dark: #b7950b;
+  --bg-gradient-start: #f5f7fa;
+  --bg-gradient-end: #e4e8ed;
+}
+
+.roller-details-page {
+  padding: 0;
+  background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  min-height: 100vh;
+}
+
+.page-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+              url('../../assets/Kras.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+  margin-bottom: 0;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--gold);
+}
+
+.page-hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+.roller-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.roller-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.thumbnail-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.thumbnail-grid img:hover {
+  transform: scale(1.05);
+}
+
+.roller-highlights {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.roller-highlights h2 {
+  color: var(--gray-dark);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.roller-highlights h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--gold);
+}
+
+.highlight-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.highlight-card {
+  background: var(--gray-light);
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.highlight-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--gold-dark);
+}
+
+.highlight-label {
+  color: var(--gray-medium);
+  font-size: 0.9rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.primary-button, .secondary-button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+}
+
+.primary-button {
+  background: var(--gold);
+  color: white;
+}
+
+.primary-button:hover {
+  background: var(--gold-dark);
+}
+
+.secondary-button {
+  background: white;
+  color: var(--gold-dark);
+  border: 1px solid var(--gold);
+}
+
+.secondary-button:hover {
+  background: var(--gray-light);
+}
+
+.roller-description {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.roller-description h2 {
+  color: var(--gray-dark);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.roller-description p {
+  color: var(--gray-medium);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.specs-section {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.specs-section h2 {
+  color: var(--gray-dark);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.specs-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--gold);
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.specs-group {
+  margin-bottom: 1.5rem;
+}
+
+.specs-group h3 {
+  color: var(--gold-dark);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed var(--gray-light);
+}
+
+.spec-name {
+  color: var(--gray-dark);
+}
+
+.spec-value {
+  color: var(--gray-medium);
+  font-weight: 500;
+}
+
+.features-section {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.features-section h2 {
+  color: var(--gray-dark);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+}
+
+.features-list li {
+  padding: 0.5rem 0;
+  color: var(--gray-medium);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.features-list li:before {
+  content: '•';
+  color: var(--gold);
+  position: absolute;
+  left: 0;
+}
+
+.back-link {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: var(--gray-light);
+  color: var(--gray-dark);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background: #ddd;
+}
+
+@media (max-width: 768px) {
+  .roller-overview {
+    grid-template-columns: 1fr;
+  }
+  
+  .highlight-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .specs-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+  
+  .page-hero {
+    padding: 3rem 1rem;
+  }
+  
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+}
+
+.features-list li {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+.specs-group h3 {
+  color: var(--gold-dark);
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.specs-group h3:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: var(--gold);
+}

@@ -1,0 +1,192 @@
+:root {
+  --gray-dark: #2c3e50;
+  --gray-medium: #7f8c8d;
+  --gray-light: #f8f9fa;
+  --gold: #d4af37;
+  --gold-dark: #b7950b;
+  --bg-gradient-start: #f5f7fa;
+  --bg-gradient-end: #e4e8ed;
+}
+
+.parts-service-page {
+  padding: 0;
+  background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  min-height: 100vh;
+}
+
+.page-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+              url('../../assets/Kras.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+  margin-bottom: 0;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--gold);
+}
+
+.page-hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.services-section {
+  padding: 3rem 0;
+}
+
+.services-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--gray-dark);
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.services-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: var(--gold);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+  backdrop-filter: blur(5px);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  color: var(--gray-dark);
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  color: var(--gray-medium);
+  line-height: 1.5;
+}
+
+.benefits-section {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 3rem 0;
+  margin-top: 2rem;
+  backdrop-filter: blur(5px);
+}
+
+.benefits-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--gray-dark);
+}
+
+.benefits-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.benefits-list li {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-left: 4px solid var(--gold);
+  font-size: 1.1rem;
+  position: relative;
+  padding-left: 3rem;
+}
+
+.benefits-list li:before {
+  content: '✓';
+  color: var(--gold);
+  position: absolute;
+  left: 1rem;
+  font-weight: bold;
+}
+
+.contact-promo {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('../../assets/Kras.jpg') center/cover no-repeat;
+  color: white;
+  margin-top: 3rem;
+}
+
+.contact-promo h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--gold);
+}
+
+.contact-promo p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-button {
+  background: var(--gold);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-button:hover {
+  background: var(--gold-dark);
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 3rem 1rem;
+  }
+  
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}

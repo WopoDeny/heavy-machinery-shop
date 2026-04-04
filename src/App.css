@@ -1,0 +1,37 @@
+:root {
+  --gray-dark: #2c3e50;
+  --gray-medium: #7f8c8d;
+  --gray-light: #f8f9fa;
+  --gold: #d4af37;
+  --gold-dark: #b7950b;
+  --bg-gradient-start: #f5f7fa;
+  --bg-gradient-end: #e4e8ed;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  background-attachment: fixed;
+  color: var(--gray-dark);
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}
